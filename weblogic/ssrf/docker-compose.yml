@@ -1,0 +1,9 @@
+services:
+ weblogic:
+   image: registry.cn-hangzhou.aliyuncs.com/0ctf/weblogic:10.3.6.0-2017
+   depends_on:
+    - redis
+   ports:
+    - "7001:7001"
+ redis:
+   image: registry.cn-hangzhou.aliyuncs.com/0ctf/baselinux:centos-6
